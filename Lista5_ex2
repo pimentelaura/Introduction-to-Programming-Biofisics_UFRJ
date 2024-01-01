@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Escreva um numero e direi se é positivo ou negativo"
+read numero
+if ["$numero" -gt 0] || ["$numero" -eq 0]
+then
+echo "O numero é positivo"
+else
+echo "O numero é negativo"
+fi

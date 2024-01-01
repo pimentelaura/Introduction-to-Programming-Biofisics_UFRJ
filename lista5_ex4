@@ -1,0 +1,16 @@
+#!/bin/bash
+echo "Digite um dos lados de um triâgulo"
+read lado_1
+echo "Digite outro lado do triângulo"
+read lado_2
+echo "Digite o último lado do triângulo"
+read lado_3
+if [$lado_1 eq $lado_2] && [$lado_2 -eq $lado_3]
+then
+echo "É um triângulo equilátero"
+elif [$lado_1 -eq $lado_2 ] || [$lado_2 -eq $lado_3 ]
+then
+echo "É um triângulo isósceles"
+else
+echo "É um triângulo escaleno"
+fi

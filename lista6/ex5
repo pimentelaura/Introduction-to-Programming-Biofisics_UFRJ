@@ -1,0 +1,3 @@
+seq = "ATGCCCGAATTCTAG"
+tamanho_da_seq = len(seq)
+print("O tamanho da sequencia é", tamanho_da_seq)

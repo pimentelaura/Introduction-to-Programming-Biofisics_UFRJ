@@ -1,0 +1,6 @@
+sequence = "AAATTGATGACAAAGAGTCCATCACTTTATCCCGCCAAATAAACACAG"
+len(sequence)
+replacing = sequence.replace("GCC", "ALANINE")
+replacing 
+seq_splited = replacing.split("ALANINE")
+seq_splited

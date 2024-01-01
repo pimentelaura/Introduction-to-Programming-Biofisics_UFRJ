@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Digite um numero"
+read numero_1
+echo "Digite outro numero e direi qual o maior"
+read numero_2
+if [ $numero_1 gt $numero_2 ];
+then
+echo "$numero_1 é maior que $numero_2"
+else
+echo "$numero_1 é menor que $numero_2"
+fi

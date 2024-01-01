@@ -1,0 +1,6 @@
+casa.extend(["poolhouse", 24.5])
+print(casa)
+casa.append(["poolhouse", 24.5])
+print(casa)
+#extend itera à lista o(s) elemento(s) selecionado como parâmetro
+#append irá adicionar 1 elemento no final da lista

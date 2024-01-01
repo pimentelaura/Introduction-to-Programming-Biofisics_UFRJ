@@ -1,0 +1,2 @@
+primeiro_andar = casa[0:3] 
+segundo_andar = casa[3:] 

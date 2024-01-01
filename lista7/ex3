@@ -1,0 +1,2 @@
+soma = casa[3]+casa[1]
+print(soma)

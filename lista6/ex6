@@ -1,0 +1,2 @@
+seq_lower = seq.lower()
+print (seq_lower)

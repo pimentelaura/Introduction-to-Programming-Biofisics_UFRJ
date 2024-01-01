@@ -1,0 +1,4 @@
+casa[0]
+#calling the first element of the list
+casa[-1]
+#calling the last element of the list

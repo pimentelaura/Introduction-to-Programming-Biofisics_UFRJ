@@ -1,2 +1,20 @@
-primeiro_andar = casa[0:3] 
-segundo_andar = casa[3:] 
+#Practicing the slice operator 
+
+hall_area = 11.25
+kitchen_area = 18
+living_room_area = 10.75
+bedroom_area = 9.50
+bathroom_area = 9.50
+house = [
+  ("hall", hall_area),
+  ("kitchen", kithen_area),
+  ("living room", living_room_area),
+  ("bedroom", bedroom_area),
+  ("bathroom", bathroom_area)
+  ]
+
+first_floor = house[0:3] 
+print("On the first floor of the house we have the following rooms: ", first_floor)
+second_floor = house[3:] 
+print("On the second floor of the house we have the following rooms: ", second_floor)
+

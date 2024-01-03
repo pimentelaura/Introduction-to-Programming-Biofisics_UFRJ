@@ -1,0 +1,8 @@
+#Practicing the .count() method on a file
+
+file = open("dnaQ2.txt", "r")
+first_sequence = file.readline() #extracting the first sequence
+print("Number of GUANINES on the first_sequence: ", first_sequence.count("G"))
+print("Number of CITOCINES on the first_sequence: ", first_sequence.count("C"))
+print("Number of TIMINES on the first_sequence: ", first_sequence.count("T"))
+print("Number of ADENINES on the first_sequence: ", first_sequence.count("A"))

@@ -1,6 +1,9 @@
+#The aminoacid GCC codifies for ALANINE
 sequence = "AAATTGATGACAAAGAGTCCATCACTTTATCCCGCCAAATAAACACAG"
-len(sequence)
-replacing = sequence.replace("GCC", "ALANINE")
-replacing 
-seq_splited = replacing.split("ALANINE")
-seq_splited
+print("The lenght of the sequence is:", len(sequence)")
+#Replacing the codon GCC to ALANINE and storing it in another variable
+new_sequence = sequence.replace("GCC", "ALANINE") 
+print(new_sequence)
+#Using the method .split() to split the new sequence at the place where i've replaced the codon
+splited_sequence = new_sequence.split("ALANINE")
+print(splited_sequence) 

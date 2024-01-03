@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Me de uma temperatura em celsius que eu vou converter para fahrenheit"
+echo "Insert a temperature in celsius and i will return it in fahrenheit"
 read celsius
-fahrenheit=$((celsius*9/5+32))
-echo "A temperatura convertida é $fahrenheit"
+fahrenheit = $((celsius*9/5+32))
+echo "The temperature in fahrenheit is: $fahrenheit °F"

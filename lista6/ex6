@@ -1,2 +1,4 @@
+#Using the .lower() method
+seq = "ATGCCCGAATTCTAG"
 seq_lower = seq.lower()
 print (seq_lower)

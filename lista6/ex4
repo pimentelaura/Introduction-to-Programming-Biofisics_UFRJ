@@ -1,4 +1,5 @@
-1/3*12
-#Um terço de 12MB é igual a 4MB
-#1MB é igual a 1.000.000 de pares de base
-4*1000000
+#Calculating and printing the value of 1/3 of a genome that presents 12MB, and then converting the value into base pairs
+#Knowing that 1/3 of 12MB = 4MB and that 1MB = 1.000.000 base pairs:
+
+base_pairs = 4*1000000
+print ("The value of 1/3 of the genome in base pairs is 4.000.000 bp")

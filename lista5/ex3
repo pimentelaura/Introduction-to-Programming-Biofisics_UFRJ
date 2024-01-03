@@ -1,11 +1,11 @@
 #!/bin/bash
-echo "Digite a hipotenusa do triângulo retângulo"
-read hipotenusa
-echo "Digite o cateto do triângulo retângulo"
+echo "Enter the hypotenuse of the triangle"
+read hypotenuse
+echo "Enter the cateto 1 of the triangle"
 read cateto_1
-echo "Digite outro cateto do triângulo retângulo"
+echo "Enter the cateto 2 of the triangle"
 read cateto_2
-perimetro=$((hipotenusa + cateto_1 + cateto_2))
-area=$((cateto_1 * cateto_2 / 2))
-echo "O perímetro é igual a $perimetro"
-echo "A área é igual a $area"
+perimeter = $((hypotenuse + cateto_1 + cateto_2))
+area = $((cateto_1 * cateto_2 / 2))
+echo "The perimeter value is $perimetro"
+echo "The area value is $area"

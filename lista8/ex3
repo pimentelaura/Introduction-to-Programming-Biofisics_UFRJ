@@ -1,0 +1,10 @@
+#Learning the .readline() and .readlines() methods
+
+file = open("ids.txt", "r")
+file_readline = file.readline()
+print(file_readline) #returns one complete line from the file
+
+file_readlines = file.readlines()
+print(file_readlines) #returns a list containing each line in the file as a list item
+
+  

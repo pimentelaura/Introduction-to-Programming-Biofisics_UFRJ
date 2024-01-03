@@ -1,11 +1,11 @@
 #!/bin/bash
-echo "Digite um numero"
-read numero_1
-echo "Digite outro numero e direi qual o maior"
-read numero_2
-if [ $numero_1 gt $numero_2 ];
+echo "Insert number 1"
+read number_1
+echo "Insert number 2"
+read number_2
+if [ $number_1 gt $number_2 ]; #gt = greater then
 then
-echo "$numero_1 é maior que $numero_2"
+echo "$number_1 it's greater then $number_2"
 else
-echo "$numero_1 é menor que $numero_2"
+echo "$number_2 it's greater then $number_1"
 fi

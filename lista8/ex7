@@ -1,0 +1,8 @@
+#Storing the 3 sequences in differents variables and printing them 
+
+file = open("genomic_dna.txt", "r")
+content = file.read()
+exon1 = content[:64]
+exon2 = content[90:]
+intron = content[64:90]
+print("First exon: ", exon1, "\n Second exon: ", exon2, "\n Intron: ", intron)

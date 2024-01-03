@@ -18,7 +18,7 @@ house_2 = house
 house_extend = house.extend(["poolhouse", 24.5])
 print("Using the .extend() method: ", house_extend)
 
-house_append = house.append(["poolhouse", 24.5])
+house_append = house_2.append(["poolhouse", 24.5])
 print("Using the .append() method: ", house_append)
 
 #The .extend() method  is used to add multiple elements from another sequence (list, tuple, etc.) to the end of the original list

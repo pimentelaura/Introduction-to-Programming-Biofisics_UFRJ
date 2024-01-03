@@ -1,13 +1,15 @@
-cor = 11.25
-cozi = 18
-sal = 10.75
-quar = 9.50
-banh = 9.50
-casa = [
-  ("corredor", cor),
-  ("cozinha", cozi),
-  ("sala", sal),
-  ("quarto", quar),
-  ("banheiro", banh)
+#Learning lists
+
+hall_area = 11.25
+kitchen_area = 18
+living_room_area = 10.75
+bedroom_area = 9.50
+bathroom_area = 9.50
+house = [
+  ("hall", hall_area),
+  ("kitchen", kithen_area),
+  ("living room", living_room_area),
+  ("bedroom", bedroom_area),
+  ("bathroom", bathroom_area)
   ]
-casa
+print(house)

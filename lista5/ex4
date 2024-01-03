@@ -1,16 +1,17 @@
 #!/bin/bash
-echo "Digite um dos lados de um triâgulo"
-read lado_1
-echo "Digite outro lado do triângulo"
-read lado_2
-echo "Digite o último lado do triângulo"
-read lado_3
-if [$lado_1 eq $lado_2] && [$lado_2 -eq $lado_3]
+#Program will inform if the triangle is equilateral, isosceles or scalene
+echo "Insert one side of the triangle"
+read side_1
+echo "Insert another side of the triangle"
+read side_2
+echo "Insert the last side of the triangle"
+read side_3
+if [ $side_1 -eq $side_2 ] && [ $side_2 -eq $side_3 ] 
 then
-echo "É um triângulo equilátero"
-elif [$lado_1 -eq $lado_2 ] || [$lado_2 -eq $lado_3 ]
+echo "The triangle is equilateral"
+elif [$side_1 -eq $side_2 ] || [$side_2 -eq $side_3 ]
 then
-echo "É um triângulo isósceles"
+echo "The triangle is isosceles"
 else
-echo "É um triângulo escaleno"
+echo "The triangle is scalene"
 fi

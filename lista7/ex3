@@ -1,2 +1,17 @@
-soma = casa[3]+casa[1]
-print(soma)
+#Slicing with operators: Performing addition operations using sliced indices of a list.
+
+hall_area = 11.25
+kitchen_area = 18
+living_room_area = 10.75
+bedroom_area = 9.50
+bathroom_area = 9.50
+house = [
+  ("hall", hall_area),
+  ("kitchen", kithen_area),
+  ("living room", living_room_area),
+  ("bedroom", bedroom_area),
+  ("bathroom", bathroom_area)
+  ]
+
+somatory = house[3]+house[1]
+print("The 4th and 2th elements of the list are:", somatory)

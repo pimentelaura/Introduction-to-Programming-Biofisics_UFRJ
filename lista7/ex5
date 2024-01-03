@@ -1,6 +1,27 @@
-casa.extend(["poolhouse", 24.5])
-print(casa)
-casa.append(["poolhouse", 24.5])
-print(casa)
-#extend itera à lista o(s) elemento(s) selecionado como parâmetro
-#append irá adicionar 1 elemento no final da lista
+#Using the .extend() method and the .append() method, and noticing the differences between them
+
+hall_area = 11.25
+kitchen_area = 18
+living_room_area = 10.75
+bedroom_area = 9.50
+bathroom_area = 9.50
+house = [
+  ("hall", hall_area),
+  ("kitchen", kithen_area),
+  ("living room", living_room_area),
+  ("bedroom", bedroom_area),
+  ("bathroom", bathroom_area)
+  ]
+#Storing the list in another variable to use for the .append() method and compare the two methods
+house_2 = house
+
+house_extend = house.extend(["poolhouse", 24.5])
+print("Using the .extend() method: ", house_extend)
+
+house_append = house.append(["poolhouse", 24.5])
+print("Using the .append() method: ", house_append)
+
+#The .extend() method  is used to add multiple elements from another sequence (list, tuple, etc.) to the end of the original list
+#It modifies the original list by extending/iterating it with the elements from the provided sequence.
+#The .append() method is used to add a single element to the end of the original list
+#The provided element is added as a single item to the list

@@ -1,9 +1,9 @@
 #!/bin/bash
-echo "Escreva um numero e direi se é positivo ou negativo"
-read numero
-if ["$numero" -gt 0] || ["$numero" -eq 0]
+echo "Insert a number and i will tell you if its negative or positive"
+read number
+if ["$number" -gt 0] || ["$number" -eq 0] # || means ''or'' #eq means equal
 then
-echo "O numero é positivo"
+echo "The number is positive"
 else
-echo "O numero é negativo"
+echo "The number is negative"
 fi

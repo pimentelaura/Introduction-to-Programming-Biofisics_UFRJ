@@ -1,0 +1,9 @@
+#Using the .join() method and .split() method on a file
+
+file = open("ids.txt", "r")
+ids = file.read()
+print("".join(ids.split())) 
+#the string will be splited into individuals words using the split() method
+#the join() method merges the words back into a single string, removing the whitespace, used as paramater, resulting in a single string without spaces
+
+

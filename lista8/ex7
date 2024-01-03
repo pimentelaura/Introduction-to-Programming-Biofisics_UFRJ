@@ -11,10 +11,10 @@ print("First exon: ", exon1, "\n Second exon: ", exon2, "\n Intron: ", intron)
 #Somatory of exon1 and exon2
 lenght_exons = (len(exon1+exon2))
 
-#Percentage of the codifying part of the genome
+#Percentage of the coding sequence of the genome
 lenght_content = len(content)
 percentage = (lenght_exons*100)/lenght_content
-print("The percentage of the codifying part of the genome is ", percentage)
+print("The percentage of the coding sequence of the genome is ", percentage)
 
 
 #Differentiation of intron 

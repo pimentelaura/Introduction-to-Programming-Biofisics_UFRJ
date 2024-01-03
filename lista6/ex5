@@ -1,3 +1,4 @@
+#Using the len() function
 seq = "ATGCCCGAATTCTAG"
-tamanho_da_seq = len(seq)
-print("O tamanho da sequencia é", tamanho_da_seq)
+seq_lenght = len(seq)
+print("The sequence lenght is: ", seq_lenght)

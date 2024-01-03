@@ -1,4 +1,4 @@
-#a) 
+#Practicing operators and methods on lists
 ids = [
     "AAY66821.1",
     "AAY66759.1",
@@ -19,21 +19,24 @@ ids = [
     "AAY66586.1",
     "AAY66564.1"
 ]
+
+#Checking how many ids there are in the list
 print("There is", len(ids), "ids")
 
-#b)
+#Checking the presence of the following id: AAY66586.1
 if "AAY66586.1" in ids:
   print("The protein AAY66586.1 is present")
-else
-  print("The protein AAY66586.1 isnt present")
+else:
+  print("The protein AAY66586.1 isn't present")
 
+#Printing the 10th element on the list 
+print("The 10th id on the list is", ids[9]) #cause it starts on 0
 
-#c)
-print("The 10º id on the list is", ids[9]) #cause it starts on 0
-
-#d)
+#Using the .insert() method to insert an element into the list at a specific position 
 ids.insert(11, "AAY66967.1")
 ids.insert(15, "AAY66880.1")
-ids.insert(18, "AAY66874.1") #posição desejada, string a ser inserida
+ids.insert(18, "AAY66874.1") 
+new_list = ids
+print("Updated list of ids: ", new_list)
 
 

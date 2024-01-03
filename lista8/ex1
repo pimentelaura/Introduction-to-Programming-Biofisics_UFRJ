@@ -1,0 +1,4 @@
+#Learning to open files in python
+my_file = open("dna.txt", "r")
+content = my_file.read()
+print(content)

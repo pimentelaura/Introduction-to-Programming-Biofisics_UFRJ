@@ -1,36 +1,35 @@
-#a)
+#Learning tuples
+
 tuple_1 = ('R', 'N', 'D', 'C', 'E', 'Q', 'G', 'H', 'I', 'L',
              'K', 'M', 'F', 'P', 'S', 'T', 'W', 'Y', 'V')
+print("There is", len(tuple_1), "aminoacids on the tuple")
 
-print(f"The length of aminoacids is {len(tuple_1)}.")
-
-#b)
-if ("E" in tuple_1):
+#Checking if glutamic acids (E) is on the list
+if "E" in tuple_1:
     print("Glutamic acid is on the list")
 else:
     print("Glutamic acid is not on the list")
 
-#c)
-tuple_2 = ('Histidina (H)', 'Triptofano (W)','Tirosina (Y)',
-            'Prolina (P)', 'Serina (S)')
+#Creating another tuple
+tuple_2 = ('H', 'W', 'Y', 'P', 'S')
 
-#d)
+#Joining the two tuples
 united_tuples = tuple_1 + tuple_2
-print (f"The new tuple is: {united_tuples}")
+print (united_tuples)
 
-#e)
-W = united_tuples.count("Triptofano (W)")
-N = united_tuples.count("N")
-C = united_tuples.count("C")
-print (f"The number of ocurrance of W is {W}")
-print (f"The number of ocurrance of N is {N}")
-print (f"The number of ocurrance of C is {C}")
+#Using the .count() method to count the ocurrence of the following elements: W, N and C
+W_ocurrence = united_tuples.count("W")
+N_ocurrence = united_tuples.count("N")
+C_ocurrence = united_tuples.count("C")
+print ("The number of ocurrance of W is ", W_ocurrence)
+print ("The number of ocurrance of N is ", N_ocurrence)
+print ("The number of ocurrance of C is ", C_ocurrence)
 
-#f)
-i = united_tuples.index("N")
-print(f"The index of asparagine on the list is {i}.")
+#Returning the index of the N (asparagine)
+n_index = united_tuples.index("N") 
+print("The index of asparagine is: ", n_index)
 
-#g)
+#Returning the last five elements of the tuple
 len = len(united_tuples)
 last_5 = united_tuples[len - 5:len]
-print(f"The last 5 elements are: {last_5}.")
+print("The last 5 elements are: last_5.")

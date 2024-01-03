@@ -1,0 +1,7 @@
+#Creating a new file and writing in it
+file = open("apresentacao.txt", "w")
+file.write("Laura de Freitas Pimentel dos Anjos" "\n" "22 anos")
+arq.close()
+new = open("apresentacao.txt", "r") 
+content = new.read() #reading the new file
+print(content)

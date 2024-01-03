@@ -1,0 +1,34 @@
+#Learning sets and performing sets operations
+A = {3, 6, 9, 12, 15, 18, 21, 24, 28, 27}
+B = {2, 6, 8, 10, 14, 16, 18, 20, 22, 24}
+C = {2, 6, 10, 18, 20}
+D = {1, 30, 5, 11, 17, 16, 22, 26}
+
+#Printing the intersection between set A and set B
+print(A.intersection(B))
+
+#Printing the difference between set A and set B
+print(A.difference(B))
+
+#Checking if set A and set B are disjoint to set D
+if A.isdisjoint(D) and B.isdisjoint(D):
+  print("The set A and B are disjoint to set D") #there is common elements
+else:
+  print("The set A and B are not disjont to set D") #there isn't common elements
+
+#Checking if C is a subset of set A and set B
+if C.issubset(A) and C.issubset(B)
+  print("C is a subset of set A and set B")
+else:
+  print("C isn't a subset of set A and set B")
+  
+#Adding elements to the set D
+D.add("18")
+D.add("23")
+D.add("25")
+D.add("63")
+print("The update set is: ", D) 
+
+
+  
+  

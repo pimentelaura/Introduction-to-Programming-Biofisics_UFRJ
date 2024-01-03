@@ -1,0 +1,7 @@
+#Using the structure "for" to iterate a file
+
+file = open("dnaQ2.txt", "r")
+sequences = file.readlines()
+#Extracting the lenght of each sequence on the file
+for sequence in sequences:
+  print(len(sequence))

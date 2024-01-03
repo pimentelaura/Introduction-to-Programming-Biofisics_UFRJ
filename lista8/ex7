@@ -1,8 +1,23 @@
-#Storing the 3 sequences in differents variables and printing them 
+#File handling 
 
+#Storing the 3 sequences in differents variables and printing them 
 file = open("genomic_dna.txt", "r")
 content = file.read()
 exon1 = content[:64]
 exon2 = content[90:]
 intron = content[64:90]
 print("First exon: ", exon1, "\n Second exon: ", exon2, "\n Intron: ", intron)
+
+#Somatory of exon1 and exon2
+lenght_exons = (len(exon1+exon2))
+
+#Percentage of the codifying part of the genome
+lenght_content = len(content)
+percentage = (lenght_exons*100)/lenght_content
+print("The percentage of the codifying part of the genome is ", percentage)
+
+
+#Differentiation of intron 
+intron_lower = content.replace(intron, intron.lower())
+print("Genome update with intron on lower characters: ", intron_lower)
+

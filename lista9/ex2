@@ -1,0 +1,10 @@
+#Calculating factorial with python, using "while" loop
+n = 1
+factorial = 1
+while n <= 9:
+  factorial = factorial * n # Updates the value of factorial by multiplying it with the current value of n.
+  n = n + 1 # Increments the value of n by 1 for the next iteration of the loop.
+print("The factorial of 9: ", factorial) # when n is no longer less than or equal to 9, it prints the result of the factorial of 9.
+
+
+

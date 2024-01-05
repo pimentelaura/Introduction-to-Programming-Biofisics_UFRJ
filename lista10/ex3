@@ -1,1 +1,16 @@
+#Create a file for Ids that starts with B, another file for Ids that starts with A and another for Ids that dont starts with B
 Ids = ['ab7a', 'bvty', 'adf3', 'vfg7', 'b4f2', 'g6hy', 'b43c', 'zu7d', 'bt7u']
+file_1 = open("starts_withB", "w")
+file_2 = open("dont_starts_withB", "w")
+file_3 = open("starts_withA", "w")
+for id in Ids:
+	if id.startswith("b"):
+    file_1.write(f"{id}\n")
+	elif id.startswith("a"):
+		file_3.write(f"{id}\n")
+	else:
+		file_2.write(f"{id}\n")
+
+file_1.close()
+file_2.close()
+file_3.close()

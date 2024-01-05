@@ -1,0 +1,9 @@
+#Using data.csv, prints the Ids of Drosophila melanogaster spp
+
+file = open("data.csv", "r")
+content = file.readlines()
+for line in content:
+  if "Drosophila melanogaster" in line:
+    n = line.split(",")
+    print(n[2])
+

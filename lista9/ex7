@@ -1,0 +1,6 @@
+#Using the for loop and range() function, print the values of the genes along with their respective indices. Ex: gene 0 is rpoA
+index = 0
+genes = ["rpoA", "gyrB", "topA", "recA", "pyrH", "rpoB"]
+for i in genes:
+  print("Gene ", index, "is", i)
+  index = index + 1

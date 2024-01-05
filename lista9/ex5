@@ -1,0 +1,7 @@
+#Using the .split() method to convert a string into a list
+
+aminoacids = "valine, leucine, lysine, tryptophan, methionine"
+list = aminoacids.split(",")
+print("List of aminoacids: ", list)
+
+

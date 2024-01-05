@@ -1,0 +1,8 @@
+#Using the for loop to count how many ADENINES there are in the sequence below
+
+sequence = "ATGGCCATGCATGCAATAAATGC"
+counter = 0
+for i in sequence:
+  if i == "A":
+    counter = counter + 1 # increments adenine counter if the currently nucleotide is an adenine
+print(counter)

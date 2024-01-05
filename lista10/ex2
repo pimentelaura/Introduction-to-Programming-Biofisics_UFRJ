@@ -1,6 +1,6 @@
 #Insert into one file the IDs that start with the letter 'b', and insert into another file the IDs that don't start with the letter 'b'
 
-Ids = [ab7a, bvty, adf3, vfg7, b4f2, g6hy, b43c, zu7d, bt7u]
+Ids = ['ab7a', 'bvty', 'adf3', 'vfg7', 'b4f2', 'g6hy', 'b43c', 'zu7d', 'bt7u']
 file_1 = open("starts_withB", "w")
 file_2 = open("dont_starts_withB", "w")
 for id in Ids:

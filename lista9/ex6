@@ -1,0 +1,9 @@
+#Convert the lowercase letters into uppercase letters and print the codons 
+
+sequence = "atgcgagaatgcatacaagtataacaa"
+upper_sequence = sequence.upper()
+# Using a for loop to iterate over the upper_sequence in groups of three characters to print the codons separately
+for i in range(0, len(upper_sequence), 3): 
+  codon = upper_sequence[i:i+3]
+  print(codon)
+

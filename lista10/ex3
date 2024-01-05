@@ -5,7 +5,7 @@ file_2 = open("dont_starts_withB", "w")
 file_3 = open("starts_withA", "w")
 for id in Ids:
 	if id.startswith("b"):
-    file_1.write(f"{id}\n")
+    		file_1.write(f"{id}\n")
 	elif id.startswith("a"):
 		file_3.write(f"{id}\n")
 	else:

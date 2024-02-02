@@ -1,0 +1,10 @@
+sequence = input("Enter the sequence you want to analyze: ")
+aminoacids = input("List the aminoacids you want to check the percentage, separated by spaces: ")
+aa_list = aminoacids.split() #converting the string into a list 
+def percentage_aa(aa_list, sequence):
+    for aminoacid in aa_list:
+        how_many = sequence.count(aminoacid)
+        percentage = (how_many * 100) / len(sequence)
+        print(f'The percentage of {aminoacid} is: {percentage}')
+    
+percentage_aa(aa_list, sequence)

@@ -1,0 +1,10 @@
+#this function takes a string and shuffles it
+import random #the random module has functions to generate random numbers
+def shuffle(text):
+    list_of_characters = list(text) #converting a string into a list of characters
+    random.shuffle(list_of_characters) #using the .shuffle() from the random module
+    shuffle_text = ''.join(list_of_characters) #converting the shuffled list into a string and removing spaces
+    return shuffle_text 
+
+text = str(input("Enter a text and i will return it shuffled: "))
+print (shuffle(text))

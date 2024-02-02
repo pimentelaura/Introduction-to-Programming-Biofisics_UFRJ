@@ -1,0 +1,10 @@
+#this function allows you to search a gene on a list of genes
+def search_gene(gene_of_interest):
+    if gene_of_interest in list_of_genes:
+        return "The gene of interest is on the list"
+    else:
+        return "The gene of interest isn't on the list"
+list = (input("Enter a list of genes, separeted by spaces: "))
+list_of_genes = list.split() #converting the string input into a list of genes
+gene_of_interest = input(str("Enter the gene of interest: "))
+print(search_gene(gene_of_interest))

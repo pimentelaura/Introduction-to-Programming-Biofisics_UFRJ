@@ -1,0 +1,11 @@
+#this function will take 2 sequences and it will return the percentage of E in the 1st sequence and V in the 2nd sequence
+seq_1 = input("Enter the first sequence: ")
+seq_2 = input("Enter the second sequence: ")
+def percentage_calculator(seq_1, seq_2):
+    how_many_E = seq_1.count("E")
+    how_many_V = seq_2.count("V")
+    percentage_seq_1 = round((how_many_E * 100)/len(seq_1), 2)
+    percentage_seq_2 = round((how_many_V * 100)/len(seq_2), 2)
+    return f'The first sequence has {percentage_seq_1}% of E nucleotides and the second sequence has {percentage_seq_2}% of V nucleotides'
+
+print(percentage_calculator(seq_1, seq_2))

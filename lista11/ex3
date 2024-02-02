@@ -1,0 +1,11 @@
+#this function will return if the numbers are multiples or not
+def multiples_or_not(a,b):
+    if a % b == 0:
+        return f"{a} is multiple of {b}!"
+    elif b % a == 0:
+        return f"{b} is multiple of {a}"
+    else:
+        return "They're not multiples"
+a = int(input("Enter the 1st number: "))
+b = int(input("Enter the 2nd number: "))
+print (multiples_or_not(a,b))

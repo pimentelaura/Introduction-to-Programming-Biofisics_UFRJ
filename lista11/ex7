@@ -1,0 +1,7 @@
+#this function counts how many Adenines there is on the sequence
+def adenines_counter(sequence):
+    sequence = sequence.upper()
+    counter = sequence.count("A")
+    return f'There is {counter} adenines in the sequence'
+sequence = input("Enter the sequence and i will tell you how many adenines it has: ")
+print(adenines_counter(sequence))

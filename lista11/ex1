@@ -1,0 +1,6 @@
+#this function takes a number as input and checks if it's divisible by 2. if it is, it returns "even", otherwise, it returns "odd"
+def even_or_odd(number):
+    if number % 2 == 0:
+        print("It's even!")
+    else:
+        print("It's odd!")

@@ -1,0 +1,8 @@
+#Print only the sequences without the headers
+
+file = open(""C:/Users/laura/Downloads/proteinas1.faa"", "r")
+proteins = file.readlines()
+for line in proteins:
+    if not line.startswith(">"): #excluding the header of the sequence, which tipically starts with ">"
+        print (line.strip()) #print the line after stripping any leading or trailing whitespaces
+file.close()

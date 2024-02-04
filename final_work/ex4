@@ -1,0 +1,36 @@
+# Size of the fragments cut by the restriction enzymes
+
+def find_enzyme(genome_seq, enzyme_seq): #this function finds the fragments cut by the restriction enzyme in the genome sequence
+    if enzyme_seq in genome_seq: #check if the enzyme sequence exists in the genome sequence
+        fragments = genome_seq.split(enzyme_seq) #split the genome sequence into fragments using the enzyme sequence as the parameter
+        if len(fragments) == 2: #if there two fragments after the split (if the enzyme split the sequence in two)
+            frag_1 = fragments[0] #assign the first and second fragments to variables
+            frag_2 = fragments[1]
+            print(f"The size of the first fragment is {len(frag_1)}")  #print the size of the first and second fragments
+            print(f"The size of the second fragment is {len(frag_2)}")
+
+def process_genome_file(genome_file): #this function process the genome file and extract the genome sequence
+    file = open(genome_file, "r")
+    lines = file.readlines()
+    genome_seq = ''.join(lines[1:]) #converting it into a string
+    genome = genome_seq.replace("\n", "") #removing newline characters
+    return genome
+
+def process_enzyme_file(enzyme_file): #this function process the enzyme file and extract the enzyme sequence
+    file = open(enzyme_file, "r")
+    line = file.read()
+    list = line.split() 
+    # Extract the enzyme sequence from the list
+    enzyme = list[4]
+    return enzyme
+
+genome_file = input("Enter the path to the genome file: ")
+enzyme_file = input("Enter the path to the enzyme file: ")
+
+#process the genome and enzyme files to obtain the genome and enzyme sequences
+genome_seq = process_genome_file(genome_file)
+enzyme_seq = process_enzyme_file(enzyme_file)
+
+if genome_seq and enzyme_seq: #if both genome and enzyme sequences exist
+    # Find the fragments cut by the enzyme in the genome sequence
+    find_enzyme(genome_seq, enzyme_seq)

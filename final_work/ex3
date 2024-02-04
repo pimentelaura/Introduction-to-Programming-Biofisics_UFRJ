@@ -1,0 +1,39 @@
+#This program checks how many ATG codons there are in the region 3-4kpb of the genome
+
+def count_met(genome):
+    genome = genome.upper()
+    region = genome[3000:4000]
+    metionine = 0 #Initialize the count of methionine codons.
+    i = 0 #Initialize the starting index for iteration.
+    j = 0  #Initialize the ending index for codon extraction.
+    while j < 1000: #Iterate until the end of the region
+        j = i + 3  #Define the end index for the current codon.
+        codon = region[i:j] #Extract the current codon from the region.
+        if codon == "ATG": #Check if the current codon is a metionine.
+            metionine += 1 #Increment the count of methionine codons.
+        i += 3 #Move to the next codon in the region
+    return metionine #Return the count of methionine codons.
+
+## Another solution using a for loop to iterate over the region of interest and count 'ATG' codons.
+# Iterates over the region in steps of 3 to extract each codon.
+# If the codon is 'ATG', increments the count of methionine codons.
+# Returns the final count of methionine codons.
+    #for i in range(0, len(region), 3):
+    #    codon = region[i:i+3]
+    #    if codon == "ATG":
+    #        metionine += 1
+    #return metionine
+
+def process_genome_file(file_path): #reads the genome file and extracts the genome content from the file, returning it as a string
+    file = open(file_path, "r")  
+    lines = file.readlines() 
+    genome = ''.join(lines[1:])  #join all lines (except the first one) into a single string.
+    return genome  #returns the concatenated genome string
+
+
+file_path = input("Enter the path to the genome file: ")
+genome_seq = process_genome_file(file_path) #using the function to process the genome file
+
+if genome_seq: #checks whether the variable genome_seq has any value assigned to it
+    metionine = count_met(genome_seq)
+    print(metionine)

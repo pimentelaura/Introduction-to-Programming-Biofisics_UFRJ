@@ -1,0 +1,8 @@
+#Print only the identifier and function of the protein
+
+file = open("C:/Users/laura/Downloads/proteinas1.faa", "r")
+proteins = file.readlines()
+for line in proteins:
+    if line.startswith(">"): #check if the line starts with ">", which typically represents the identifier and function of a protein
+        print (line)
+

@@ -1,0 +1,32 @@
+#Recover region 3-4kpb of the genome
+#Print the complementary sequence
+
+def genome_cut(genome): #this function creates a complementary sequence of the genome
+    genome = genome.upper()
+    region = genome[3000:4000]
+    comp_seq = []
+    for nucleotide in region:
+        if nucleotide == "A":
+            comp_seq.append("T")
+        elif nucleotide == "T":
+            comp_seq.append("A")
+        elif nucleotide == "C":
+            comp_seq.append("G")
+        else:
+            comp_seq.append("C")
+    return ''.join(comp_seq) #the join converts the list into a string 
+        
+
+def process_genome_file(file_path): #this function process the genome file into a string of characters
+    file = open(file_path, "r")
+    lines = file.readlines()
+    genome = ''.join(lines[1:])
+    return genome
+
+file_path = input("Enter the path to the genome file: ")
+genome_seq = process_genome_file(file_path)
+
+if genome_seq: #checks whether the variable genome_seq has any value assigned to it
+    comp_seq = genome_cut(genome_seq) #processes the function and assign the returned value to the variable comp_seq
+    print(comp_seq) #prints the complementary sequence
+  

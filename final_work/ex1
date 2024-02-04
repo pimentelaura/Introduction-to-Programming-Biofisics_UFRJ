@@ -1,0 +1,30 @@
+#Program that calculates genome size and GC content
+def GC_percentage(genome): #this function takes the genome, counts the number of G and C nucleotides and calculates the percentage of it
+    genome = genome.upper()
+    genome_length = len(genome)
+    count = 0
+    for nucleotide in genome:
+        if nucleotide == "G" or nucleotide == "C":
+            count += 1
+    percentage_GC = count * 100 / genome_length
+    return percentage_GC
+    
+def process_genome_file(file_path): #this function reads the file that has the genome, join the sequences, and returns it as a variable called "genome"
+    file = open(file_path, "r")
+    lines = file.readlines()
+    genome = ''.join(lines[1:])
+    return genome
+
+file_path = input("Enter the path to the genome file: ") 
+genome_seq = process_genome_file(file_path) #uses the function to process the genome file 
+
+if genome_seq:
+    gc_content = GC_percentage(genome_seq) #using the function to calculates the percentage of GC content
+
+#telling the user if the genome has high, average or low content of GC 
+if gc_content > 0.65: 
+    print("The genome length has high GC content.")
+elif 0.45 <= gc_content >= 0.65:
+    print("The genome has average GC content.")
+else:
+    print("The genome has low GC content.")

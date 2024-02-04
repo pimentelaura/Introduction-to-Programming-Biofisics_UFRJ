@@ -1,0 +1,18 @@
+# Program that prints the start and stop codons
+
+def process_exon_file(file_path): #function to process the exon file and return its content as a list of lines
+    file = open(file_path, "r")
+    lines = file.readlines()
+    return lines
+
+def codons(lines): #this function extracts and print start and stop codons from the "lines" variable
+    for line in lines:
+        codon = line.strip().split(',') #remove leading and trailing whitespaces and split the line to extract codons
+        print(f"The start codon is {codon[0]}, the stop codon is {codon[1]}") #print the start and stop codons extracted from the current line
+
+file_path = input("Enter the path to the exon file: ")
+
+lines = process_exon_file(file_path) #process the exon file to obtain its content as a list of lines
+
+if lines: #if the list of lines is not empty
+    output = codons(lines)  #call the codons function to print the start and stop codons extracted from the lines

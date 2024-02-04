@@ -1,0 +1,18 @@
+#Calculate the size of each protein by printing the ID and the function of the protein
+
+file = open("C:/Users/laura/Downloads/proteinas1.faa", "r")
+
+protein_lines = file.readlines() #read all lines from the file and turns into a list containing each line in the file as a list item
+
+protein_united = "\n".join(protein_lines) #join all lines to form a single string
+
+protein_list = protein_united.split(">") #split the protein information by '>' to separate the single string into individual proteins
+
+for protein in protein_list: #iterate through each protein in the list
+    start = protein.find("W") #find the start and end positions of the protein identifier and function
+    end = protein.find("]") 
+    protein_id = ">" + protein[start:end] + "]"  #extract the protein identifier and function
+    sequence_size = len(protein[protein.find("\n"):]) #calculate the size of the protein sequence
+    print(protein_id, "\n", sequence_size) #print the protein identifier and function along with the size of the protein sequence
+
+file.close()
